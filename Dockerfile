@@ -1,6 +1,6 @@
 FROM docker.io/ibmcom/websphere-liberty:20.0.0.5-full-java11-openj9-ubi
 
-RUN mkdir /my-special-folder
+RUN mkdir -p /my-special-folder
 COPY Dockerfile /my-special-folder/Dockerfile
 
 COPY target/simple-stuff.war /config/dropins/
